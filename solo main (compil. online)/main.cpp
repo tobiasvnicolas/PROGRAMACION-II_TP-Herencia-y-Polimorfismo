@@ -83,8 +83,10 @@ public:
         for (int i = 0; i < materiasInscriptas.size(); i++) {
             if (materiasInscriptas[i].first == nombreMateria) {
                 materiasInscriptas[i].second = nota;
+                return true;
             }
         }
+        return false;
     }
     string getDNI() {
         return DNI;

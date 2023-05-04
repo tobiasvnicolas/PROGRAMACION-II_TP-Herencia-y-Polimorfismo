@@ -20,8 +20,10 @@ void Alumno::modificarDatos(string dni, string apellido, string nombres, string 
         for (int i = 0; i < materiasInscriptas.size(); i++) {
             if (materiasInscriptas[i].first == nombreMateria) {
                 materiasInscriptas[i].second = nota;
+                return true;
             }
         }
+        return false;
     }
     string Alumno::getDNI() {
         return DNI;
